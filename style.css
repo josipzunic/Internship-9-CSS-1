@@ -28,6 +28,10 @@
     text-align: center;
 }
 
+.marquee li:hover {
+    cursor: pointer;
+}
+
 .search-icon {
     width: 1rem;
 }
@@ -67,11 +71,19 @@
     transform: translateX(-50%);
 }
 
+.main-icons-logo:hover {
+    cursor: pointer;
+}
+
 .main-icons ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+}
+
+.main-icons ul:hover {
+    cursor: pointer;
 }
 
 .main-icons img {
@@ -101,4 +113,106 @@
     flex-direction: row;
     gap: 1.5rem;
     font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+}
+
+header {
+    background-color: #d6ad7f;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promotion-text {
+    color: #7f0019;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.promotion-text div:nth-child(1) {
+    font-size: clamp(1.9rem,2.5vmax,3rem);
+    line-height: clamp(2rem,2.7vmax,3.2rem);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.promotion-text div:nth-child(2) {
+    font-size: clamp(1.1rem,1.4vmax,1.4rem);
+    line-height: clamp(1.3rem,1.5vmax,1.6rem);
+    font-weight: lighter;
+}
+
+.promotion-text div:nth-child(3) {
+    font-size: clamp(3.2rem,6.6vmax,8.5rem);
+    line-height: clamp(3.4rem,6.9vmax,8.7rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.promotion-text div:nth-child(4) {
+    font-size: clamp(1.9rem,2.5vmax,3rem);
+    line-height: clamp(2rem,2.7vmax,3.2rem);
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+.promotion-text div:nth-child(5) {
+    font-size: clamp(2rem,3vmax,3.5rem);
+    line-height: clamp(2.3rem,3.2vmax,3.7rem);
+    font-weight: bold;
+
+}
+
+.promotion-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 60%;
+    padding-right: 0.5rem;
+}
+
+.promotion-images img {
+    border-radius: 2px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.promotion-images-container {
+    position: relative;
+    flex: 1;
+}
+
+.promotion-image-text {
+    color: white;
+    font-weight: 550;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.promotion-image-text hr {
+    color: #7f0019;
+    border: 1px solid #7f0019;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.promotion-images-container:hover {
+    cursor: pointer;
+}
+
+.promotion-images-container:hover .promotion-image-text hr {
+    opacity: 1;
 }
