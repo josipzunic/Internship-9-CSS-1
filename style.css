@@ -216,3 +216,60 @@ header {
 .promotion-images-container:hover .promotion-image-text hr {
     opacity: 1;
 }
+
+.highlights {
+    background-color: #f5f3f2;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.highlights-title {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #3d3d44;
+}
+
+.highlights-items {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    overflow: scroll;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #3d3d44;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlights-item {
+    flex: 0 0 20%;
+}
+
+.highlights-item-text {
+    display: inline-block;
+}
+
+.highlights-item-text hr {
+    color: #7f0019;
+    border: 2px solid #7f0019;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.highlights-item:hover{
+    cursor: pointer;
+}
+
+.highlights-item:hover .highlights-item-text hr{
+    opacity: 1;
+}
+
+.highlights-items img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
