@@ -374,6 +374,7 @@ header {
     width: 100%;
     padding-right: 5rem;
     box-sizing: border-box;
+    padding-top: 1rem;
 }
 
 .bestsellers-item {
@@ -408,4 +409,86 @@ header {
     border: 2px solid #7f0019;
     opacity: 0;
     transition: opacity 0.2s;
+}
+
+.products {
+    padding-left: 5rem;
+}
+
+.products-container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-right: 5rem;
+}
+
+.products-item {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+
+.product-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.item-image-1,
+.item-image-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.item-image-1 {
+    opacity: 1;
+}
+
+.item-image-2 {
+    opacity: 0;
+}
+
+.product-image-wrapper:hover .item-image-2 {
+    opacity: 1;
+}
+
+.product-image-wrapper:hover {
+    cursor: pointer;
+}
+
+.product-colors {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.product-colors img {
+    border-radius: 100%;
+    width: 15px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.product-description {
+    font-weight: lighter;
+}
+
+.product-new-tag {
+    color: #7f0019;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: fit-content;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
 }
