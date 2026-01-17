@@ -700,7 +700,29 @@ footer a {
     }
 
     .highlights-item {
-        flex: 0 0 35%;
+        flex: 0 0 30%;
+    }
+
+    .section-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .section {
+        flex: 0 0 45%;
+        min-width: 300px;
+    }
+
+    .footer-input {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-input input,
+    .footer-input .button {
+        width: 100%;
     }
 }
 
@@ -709,7 +731,6 @@ footer a {
     .marquee {
         display: none;
     }
-
 
     .main-icons {
         flex-direction: column;
@@ -753,7 +774,6 @@ footer a {
 
     .promotion-images {
         width: 100%;
-        flex-direction: row;
     }
 
     .hero-big-text {
@@ -762,7 +782,15 @@ footer a {
 
     .hero-women-text,
     .hero-men-text {
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        font-size: clamp(0.6rem, 2.5vw, 1rem);
+    }
+
+    .highlights {
+        padding-left: 1rem;
+    }
+
+    .sesional-selection {
+        padding-left: 1rem;
     }
 
     .highlights-item {
