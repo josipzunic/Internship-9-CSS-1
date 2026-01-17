@@ -5,6 +5,14 @@
     line-height: 1.5;
 }
 
+.products {
+    --ratio: 1 / 1;
+}
+
+.stories {
+    --ratio: 1 / 1.2;
+}
+
 .marquee {
     background-color: rgb(60, 60, 67);
     width: 100%;
@@ -437,7 +445,7 @@ header {
 .product-image-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: var(--ratio, 1 / 1);
 }
 
 .item-image-1,
@@ -498,4 +506,30 @@ header {
     padding-left: 5rem;
     background-color: #f5f3f2;
     padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.stories {
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.story-item-image {
+    aspect-ratio: 16 / 9;
+}
+
+.story-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.story-link {
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 1rem;
+}
+
+.stories-item:hover {
+    color: #7f0019;
 }
