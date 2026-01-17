@@ -246,7 +246,7 @@ header {
 }
 
 .highlights-item {
-    flex: 0 0 20%;
+    flex: 0 0 22%;
 }
 
 .highlights-item-text {
@@ -413,6 +413,7 @@ header {
 
 .products {
     padding-left: 5rem;
+    padding-bottom: 5rem;
 }
 
 .products-container {
@@ -491,4 +492,10 @@ header {
     padding-bottom: 0.2rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
+}
+
+.sesional-selection {
+    padding-left: 5rem;
+    background-color: #f5f3f2;
+    padding-top: 5rem;
 }
