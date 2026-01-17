@@ -242,7 +242,7 @@ header {
     line-height: 1.5;
     color: #3d3d44;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .highlights-item {
