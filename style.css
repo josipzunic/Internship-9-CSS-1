@@ -40,6 +40,11 @@
     cursor: pointer;
 }
 
+.marquee a {
+    text-decoration: none;
+    color: white;
+}
+
 .search-icon {
     width: 1rem;
 }
@@ -83,6 +88,11 @@
     cursor: pointer;
 }
 
+.main-icons-logo a {
+    text-decoration: none;
+    color: black;
+}
+
 .main-icons ul {
     list-style-type: none;
     display: flex;
@@ -124,8 +134,14 @@
     margin-bottom: 1rem;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
 .navbar li:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 header {
@@ -251,6 +267,10 @@ header {
     color: #3d3d44;
     align-items: center;
     justify-content: flex-start;
+}
+
+.highlights-items a {
+    color: black;
 }
 
 .highlights-item {
@@ -509,6 +529,10 @@ header {
     padding-bottom: 5rem;
 }
 
+.sesional-selection a {
+    color: black;
+}
+
 .stories {
     padding-top: 5rem;
     padding-left: 6rem;
@@ -531,7 +555,12 @@ header {
     padding-top: 1rem;
 }
 
-.stories-item:hover {
+.stories-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.stories-item a:hover {
     color: #7f0019;
 }
 
@@ -632,9 +661,18 @@ footer {
     font-size: 0.6rem;
 }
 
+footer a {
+    color: white;
+}
+
 .end {
     padding-right: 6rem;
     text-align: end;
     font-weight: lighter;
     padding-bottom: 3rem;
+    text-decoration: underline;
+}
+
+.end:hover {
+    cursor: pointer;
 }
